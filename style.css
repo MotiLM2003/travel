@@ -1,0 +1,86 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:link,
+*:visited,
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  direction: rtl;
+}
+.wrapper {
+  width: 1546px;
+  max-width: calc(100vw - 120px);
+  margin: 0 auto;
+  position: relative;
+}
+.hero {
+  background: url('./images//hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 24%;
+  height: 430px;
+  border-bottom: 15px solid rgba(0, 70, 150, 1);
+  margin-bottom: 5rem;
+}
+
+.toolbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.circle {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: url('./images//card-background.jpg');
+  background-size: cover;
+  background-position: 100% 24%;
+
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: David;
+}
+
+.card-header {
+  padding: 0.6rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: right;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-position: 100% 70%;
+  color: #fff;
+}
